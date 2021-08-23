@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel ="stylesheet" type="text/css" href="css/normalize.css">
+<link rel ="stylesheet" type="text/css" href="css/register.css">
+<link rel ="stylesheet" type="text/css" href="css/global.css">
+
+
+<style>
+
+
+form {
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('img/lab3back4.jpg');
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #172035;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: white;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color:gray;
+  text-align: center;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    background: #48575c;
+    position: absolute;
+    top: 2100px;
+    left: 0;
+}
+</style>
+</head>
+<body>
+
+  <header>
+  	<img id="logo" src="img/logo1.png">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="market.html">Brands</a>
+        <a href="market.html">Categories</a>
+        <a href="media.html">In Media</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="market.html">Contact Us</a>
+      </nav>
+
+  </header>
+
+<form action="https://www.musicstores.in/">
+  <div class="container">
+  <Center>  <h1>Welcome to SPC Music Store Registration</h1> </Center>
+   <Center> <p>Please fill in this form to create an account.</p><Center>
+    <hr>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="name" id="name" required>
+<br>
+<br>
+    <label for="dateofbirth"><b>Enter your Dateofbirth</b></label>
+    <p></p> <label for="Dateofbirth">Dateofbirth:</label>
+      <input type="date" id="dateofbirth" name="dateofbirth">
+
+    </form><br>
+    <br>
+    <br>
+    <label for="gender"><b>Enter your gender</b></label><br>
+    <br><input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br>
+     
+    <br>
+     <br>
+ <label for="Interset"><b><h1>Select your choice</h1></b></label>
+
+  <p><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <labe1 for="vehicle1"> Newly Arrived Musical Instruments</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Best Selling Musical Items</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Musical Instruments On Sale</label><br><br>
+  <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+  <label for="vehicle3"> Top Brand On Sale</label><br><br>
+
+
+  <label for="hoby"><b>Enter your Interest</b></label><br><br>
+  <label for="cars">Choose an feild :</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Yamaha F310 Acoustic Guitar</option>
+    <option value="saab">SportsDRUM SETS</option>
+    <option value="audi">DIGITAL PIANOS</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <label for="contact"><b>Contact Number:</b></label>
+  <input type="text" placeholder="Enter your contact number" name="contact" id="contact" required>
+  <br>
+  <label for="email"><b>Enter your Email:</b></label>
+    <input type="text" placeholder="Enter your Email ID" name="email" id="email" required>
+      <br>
+
+    <label for="psw"><b>Enter Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+  <br>
+    <label for="psw-repeat"><b>Confirm Password:</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="https://www.musicstores.in/content/3-terms-and-conditions-of-use"><span style="color:blue">Terms & Privacy</span></a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+
+  </div>
+
+
+</form>
+<footer>
+
+
+
+<center>	<p id="footer"> Copyright 2021. All Rights Reserved. | SPC Music Stores</p></center>
+
+</footer>
+
+</body>
+</html>
